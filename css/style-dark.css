@@ -1,4 +1,7 @@
 @import url('../fonts/roboto.css');@import url('../fonts/railway.css');html > div[style]{display:none !important;}
+body {
+    font-weight: 300;
+}
 .navbar.navbar-default{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border:0;background:#25292c;}
 .navbar .navbar-brand{font-family:'Raleway', sans-serif;padding:18px 25px;padding-right:30px;color:#FCFCFC;font-weight:900;text-transform:uppercase;height:auto;background:#4cddf3;outline:0;}
 .navbar .navbar-brand img{margin-right:5px;}
@@ -253,9 +256,43 @@ footer.footer{background:#4cddf3;}
 .skill-bar ul li h5{margin:0;color:#FFF;line-height:35px;position:absolute;font-weight:700;}
 .skill-bar ul li .bar{padding-left:15px;height:100%;background:#4cddf3;width:0%;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;}
 .skill-bar ul li span{position:absolute;top:0;right:20px;color:#FFF;}
-.fullfilter{position:absolute;width:100%;height:100%;
-    background: linear-gradient(20deg, rgba(36, 29, 93, 0.96), rgba(26, 104, 113, 0.96));
-    z-index:100;}
+.fullfilter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #10364c, hsla(186, 100%, 50%, 0.98), #114b6d);
+    /*background: linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9);*/
+    z-index: 100;
+}
+.stay-tuned {
+    text-decoration: none;
+}
+.stay-tuned:visited {
+    text-decoration: none;
+}
+.stay-tuned:focus {
+    text-decoration: none;
+}
+.stay-tuned:active {
+    text-decoration: none;
+}
+.fullfilter-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9);
+    /*background: linear-gradient(0deg, #10364c, hsla(186, 100%, 50%, 0.98), #114b6d);*/
+    z-index: 101;
+    opacity: 0;
+}
+.fullfilter-clicked {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994);
+    z-index: 102;
+    opacity: 0;
+}
 .content-home-wrapper{z-index:3;position:relative;width:100%;height:100%;}
 .home-image{position:absolute;top:0;left:0;width:100%;height:100%;}
 .home-wrapper{display:block;position:relative;min-height:200px;height:100%;width:100%;}

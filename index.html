@@ -41,15 +41,16 @@
         <script src="js/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body data-spy="scroll" data-target=".navbar-collapse">
+    <body style="font-weight: 300;" data-spy="scroll" data-target=".navbar-collapse">
         <!-- BEGIN OUTTER -->
         <div class="outter">
             <div class="home-wrapper">
                 <div class="text-center">
-                    <div class="header-center fade-in" style="z-index:101;">
-                        <h2>
-                            <a href="https://www.cybercortex.org" target="_blank">
-                                <span style="opacity: 0.5;">
+                    <div class="header-center fade-in" style="z-index:150;">
+                    <!--<div class="header-center" style="z-index:150;">-->
+                        <h2 class="" style="opacity:0.5;">
+                            <a class="stay-tuned" id="stay_tuned" href="https://gitlab.com/traili/traili" target="_blank">
+                                <span>
                                     STAY TUNED
                                 </span>
                             </a>
@@ -63,7 +64,10 @@
                     </div>
                 </div>
                 <div class="top_static_image animatez delay four" data-effect="fadeIn"></div>
-                <div class="fullfilter"></div>
+                <div class="fullfilter" id="fullfilter">
+                    <div class="fullfilter-hover"></div>
+                    <div class="fullfilter-clicked"></div>
+                </div>
             </div>
         </div>
         <script src="js/jquery-1.10.2.min.js"></script>
@@ -71,9 +75,9 @@
         <script src="js/lib/grid.js"></script>
         <script src="js/lib/jquery.backgroundvideo6.js"></script>
         <script src="js/lib/waypoints.js"></script>
-        <script src="js/lib/jquery.backtotop.js"></script>
+        <!--<script src="js/lib/jquery.backtotop.js"></script>-->
         <script src="js/lib/jquery.parallax.js"></script>
-        <script src="js/lib/jquery.smooth-scroll.min.js"></script>
+        <!--<script src="js/lib/jquery.smooth-scroll.min.js"></script>-->
         <script src="js/lib/jquery.fitvid.js"></script>
         <script src="js/main.js"></script>
     </body>

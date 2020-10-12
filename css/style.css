@@ -15,6 +15,10 @@ BLUE: #4cddf3;
 @import url('/../fonts/roboto.css');
 @import url('/../fonts/railway.css');
 
+body {
+    font-weight: 300;
+}
+
 /* ======== BOOTSTRAP STYLE ========= */
 
 /*
@@ -528,6 +532,7 @@ p {
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     outline: 0;
+    font-weight: 300;
 }
 
 .header-center a:hover {
