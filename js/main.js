@@ -1,7 +1,10 @@
 var dp=jQuery;
 var hoverDone;
 
+console.log = function(){};
+
 dp(document).ready(function() {
+
 
     Grid.init();
     dp('.bg-about').parallax("10%", 1);
