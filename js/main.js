@@ -9,14 +9,46 @@ dp(document).ready(function() {
     Grid.init();
     dp('.bg-about').parallax("10%", 1);
     // dp("#backtotop").backToTop();
-    var videobackground = new dp.backgroundVideo(dp('.home-video'), {
+    var videobackground = new dp.backgroundVideo(dp('.waves-video'), {
         "align": "centerXY",
         "muted": "muted",
         "width": 1280,
         "height": 720,
         "path": "video/",
         "filename": "cn_s1",
-        "types": ["mp4", "ogg", "webm"]
+        "types": ["mp4", "ogg", "webm"],
+        "videoid":"sea"
+    });
+
+    var videobackgroundLightning1 = new dp.backgroundVideo(dp('.lightning-video'), {
+        "align": "centerXY",
+        "muted": "muted",
+        "width": 1280,
+        "height": 720,
+        "path": "video/",
+        "filename": "lightning_background",
+        "types": ["mp4", "ogg", "webm"],
+        "videoid":"lightning_1"
+    });
+    // var videobackgroundLightning2 = new dp.backgroundVideo(dp('.lightning-video2'), {
+    //     "align": "centerXY",
+    //     "muted": "muted",
+    //     "width": 1280,
+    //     "height": 720,
+    //     "path": "video/",
+    //     "filename": "2",
+    //     "types": ["mp4", "ogg", "webm"],
+    //     "videoid":"lightning_2"
+    // });
+    var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
+        "align": "centerXY",
+        "muted": "muted",
+        "width": 1280,
+        "height": 720,
+        "path": "video/",
+        "filename": "3",
+        "types": ["mp4", "ogg", "webm"],
+        "videoid":"fire"
     });
     dp(".animatez").waypoint(function (direction) {
         var effect = dp(this).attr('data-effect');
@@ -35,17 +67,48 @@ dp(document).ready(function() {
     stayTuned.hover(function(e){
         hoverDone = true;
         e.preventDefault();
-        $(".fullfilter-hover").animate({
+
+        $(".lightning-video").animate({
             opacity: 1
         },0);
+        $(".fullfilter-hover").animate({
+            opacity: 0.92
+        },0);
+        $(".fullfilter").animate({
+            opacity: 0
+        },1500);
     }, function () {
+        $(".fullfilter").animate({
+            opacity: 0.97
+        },0);
+        $(".lightning-video").animate({
+            opacity: 0.7
+        },0);
         $(".fullfilter-hover").animate({
             opacity: 0
         },1500);
+        // hoverDone = false;
     });
     stayTuned.click(function(e){
         $(".fullfilter-hover").fadeOut();
-        $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
+        // $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
+
+        $(".fullfilter-clicked").animate({
+            opacity: 1
+        },1500);
+        $(".fullfilter-clicked-2").animate({
+            opacity: 1
+        },1500);
+        $(".fullfilter-clicked-3").animate({
+            opacity: 1
+        },1500);
+        $(".fullfilter-clicked-4").animate({
+            opacity: 1
+        },1500);
+        $(".fullfilter").animate({
+            opacity: 0
+        },2500);
+
         // setTimeout(function(){
         //     window.location = 'https://gitlab.com/traili/traili';
         //     // e.trigger();
@@ -61,40 +124,57 @@ dp(document).ready(function() {
 
 function pulseAnimation() {
 
-    var gettingOut = false;
-    var gotOut = true;
+    var neonMayFadeOut = false;
+    var neonFadeOut = true;
 
         setTimeout(function(){
+
             setInterval(function(){
             // setTimeout(function(){
             //     console.log('check neon fadeIn');
-                if (!hoverDone && !gettingOut){
-                    $(".fullfilter-hover").animate({
+                if (!hoverDone && !neonMayFadeOut){
+                    $(".lightning-video").animate({
                         opacity: 1
+                    },0);
+                    $(".fullfilter-hover").animate({
+                        opacity: 0.92
                     },500, function(){
-                        gotOut = false;
-                        gettingOut = true;
-                        console.log('gettingOut', gettingOut);
+                        neonFadeOut = false;
+                        neonMayFadeOut = true;
+                        console.log('neonMayFadeOut', neonMayFadeOut);
                     });
                     console.log('neon fadeIn');
+                    $(".fullfilter").animate({
+                        opacity: 0
+                    },1500);
                 }
-            }, 15100);
+            }, 5100);
+
             setInterval(function(){
             // setTimeout(function(){
                 console.log('check neon fadeOut');
-                if (!hoverDone && gettingOut && !gotOut) {
+                if (!hoverDone && neonMayFadeOut && !neonFadeOut) {
+
+                    $(".fullfilter").animate({
+                        opacity: 0.97
+                    },0);
+                    $(".lightning-video").animate({
+                        opacity: 0.7
+                    },0);
                     $(".fullfilter-hover").animate({
                         opacity: 0
                     },1500, function () {
-                        gotOut = true;
+                        neonFadeOut = true;
+
                         setTimeout(function(){
-                            gettingOut = false;
-                            console.log('neon fadeOut timeout');
-                            console.log('gettingOut', gettingOut);
-                        },30000);
+                            neonMayFadeOut = false;
+                            console.log('neon blink timeout');
+                            console.log('neonMayFadeOut', neonMayFadeOut);
+                        }, 25000);
+
                     });
                     console.log('neon fadeOut');
                 }
-            },16000);
-        },5000);
+            },22000);
+        },8000);
 }
