@@ -1,11 +1,7 @@
 var dp=jQuery;
 var hoverDone;
-
 console.log = function(){};
-
 dp(document).ready(function() {
-
-
     Grid.init();
     dp('.bg-about').parallax("10%", 1);
     // dp("#backtotop").backToTop();
@@ -30,16 +26,6 @@ dp(document).ready(function() {
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1"
     });
-    // var videobackgroundLightning2 = new dp.backgroundVideo(dp('.lightning-video2'), {
-    //     "align": "centerXY",
-    //     "muted": "muted",
-    //     "width": 1280,
-    //     "height": 720,
-    //     "path": "video/",
-    //     "filename": "2",
-    //     "types": ["mp4", "ogg", "webm"],
-    //     "videoid":"lightning_2"
-    // });
     var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
         "align": "centerXY",
         "muted": "muted",
