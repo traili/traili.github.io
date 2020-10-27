@@ -29,12 +29,14 @@ dp(document).ready(function() {
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1",
         "callback": function(){
+            $(".lightning-video").fadeIn(1500);
+            $(".fullfilter").animate({
+                opacity: 0.97
+            },2500);
+            console.log('Done');
+            
             setTimeout(function(){
-                $(".lightning-video").fadeIn(1500);
-                $(".fullfilter").animate({
-                    opacity: 0.97
-                },2500);
-                console.log('Done');
+
             }, 3000);
         }
     });
