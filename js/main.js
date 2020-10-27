@@ -35,7 +35,7 @@ dp(document).ready(function() {
                     opacity: 0.97
                 },2500);
                 console.log('Done');
-            }, 2000);
+            }, 2500);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
