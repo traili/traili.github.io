@@ -117,7 +117,7 @@ dp(document).ready(function() {
         // $(".fullfilter-hover").css("background","linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9)");
     });
 
-    // pulseAnimation();
+    pulseAnimation();
 });
 
 function pulseAnimation() {
