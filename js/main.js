@@ -30,12 +30,12 @@ dp(document).ready(function() {
         "videoid":"lightning_1",
         "callback": function(){
             setTimeout(function(){
-                $(".lightning-video").fadeIn(1500);
+                $(".lightning-video").fadeIn(500);
                 $(".fullfilter").animate({
                     opacity: 0.97
                 },2500);
                 console.log('Done');
-            }, 2500);
+            }, 3000);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
