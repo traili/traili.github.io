@@ -37,7 +37,7 @@ dp(document).ready(function() {
                     },2500);
                 },2000);
                 console.log('Done');
-            }, 1000);
+            }, 3000);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
