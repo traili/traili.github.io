@@ -1,6 +1,6 @@
 var dp=jQuery;
 var hoverDone;
-console.log = function(){};
+// console.log = function(){};
 dp(document).ready(function() {
     Grid.init();
     dp('.bg-about').parallax("10%", 1);
@@ -14,7 +14,9 @@ dp(document).ready(function() {
         "filename": "cn_s1",
         "types": ["mp4", "ogg", "webm"],
         "videoid":"sea",
-        "callback": function(){}
+        "callback": function(){
+            console.log('Done');
+        }
     });
 
     var videobackgroundLightning1 = new dp.backgroundVideo(dp('.lightning-video'), {
@@ -30,6 +32,8 @@ dp(document).ready(function() {
             $(".fullfilter").animate({
                 opacity: 0.95
             },0);
+
+            console.log('Done');
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {

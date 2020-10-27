@@ -42,7 +42,6 @@
             plugin.videoEl = document.getElementById(plugin.settings.videoid);
             plugin.$videoEl = $(plugin.videoEl);
             plugin.$videoEl.fadeIn(8500);
-            plugin.settings.callback();
             setProportion();
         }
 
@@ -97,6 +96,7 @@
         });
         plugin.$videoEl.bind('ended', function () {
             this.play();
+            plugin.settings.callback();
         });
     }
 })(jQuery);
