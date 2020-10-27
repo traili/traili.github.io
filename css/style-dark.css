@@ -297,7 +297,7 @@ footer.footer{background:#4cddf3;}
     background: linear-gradient(0deg, #10364c, hsla(186, 100%, 50%, 0.98), #114b6d);
     /*background: linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9);*/
     z-index: 100;
-    /*opacity: 1;*/
+    opacity: 0.99;
 }
 
 .lightning-video{
