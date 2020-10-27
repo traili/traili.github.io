@@ -29,11 +29,13 @@ dp(document).ready(function() {
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1",
         "callback": function(){
-            $(".fullfilter").animate({
-                opacity: 0.95
-            },0);
-
-            console.log('Done');
+            setTimeout(function(){
+                $(".lightning-video").fadeIn(1500);
+                $(".fullfilter").animate({
+                    opacity: 0.97
+                },2500);
+                console.log('Done');
+            }, 3000);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
@@ -115,7 +117,7 @@ dp(document).ready(function() {
         // $(".fullfilter-hover").css("background","linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9)");
     });
 
-    pulseAnimation();
+    // pulseAnimation();
 });
 
 function pulseAnimation() {
