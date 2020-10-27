@@ -31,11 +31,13 @@ dp(document).ready(function() {
         "callback": function(){
             setTimeout(function(){
                 $(".lightning-video").fadeIn(500);
-                $(".fullfilter").animate({
-                    opacity: 0.97
-                },2500);
+                setTimeout(function () {
+                    $(".fullfilter").animate({
+                        opacity: 0.97
+                    },2500);
+                },2000);
                 console.log('Done');
-            }, 3000);
+            }, 1000);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
