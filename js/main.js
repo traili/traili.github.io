@@ -26,16 +26,16 @@ dp(document).ready(function() {
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1"
     });
-    var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
-        "align": "centerXY",
-        "muted": "muted",
-        "width": 1280,
-        "height": 720,
-        "path": "video/",
-        "filename": "3",
-        "types": ["mp4", "ogg", "webm"],
-        "videoid":"fire"
-    });
+    // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
+    //     "align": "centerXY",
+    //     "muted": "muted",
+    //     "width": 1280,
+    //     "height": 720,
+    //     "path": "video/",
+    //     "filename": "3",
+    //     "types": ["mp4", "ogg", "webm"],
+    //     "videoid":"fire"
+    // });
     dp(".animatez").waypoint(function (direction) {
         var effect = dp(this).attr('data-effect');
         dp(this).removeClass('animatez');
