@@ -42,6 +42,7 @@
             plugin.videoEl = document.getElementById(plugin.settings.videoid);
             plugin.$videoEl = $(plugin.videoEl);
             plugin.$videoEl.fadeIn(8500);
+            plugin.settings.callback();
             setProportion();
         }
 

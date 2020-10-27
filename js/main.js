@@ -13,7 +13,8 @@ dp(document).ready(function() {
         "path": "video/",
         "filename": "cn_s1",
         "types": ["mp4", "ogg", "webm"],
-        "videoid":"sea"
+        "videoid":"sea",
+        "callback": function(){}
     });
 
     var videobackgroundLightning1 = new dp.backgroundVideo(dp('.lightning-video'), {
@@ -24,7 +25,12 @@ dp(document).ready(function() {
         "path": "video/",
         "filename": "lightning_background",
         "types": ["mp4", "ogg", "webm"],
-        "videoid":"lightning_1"
+        "videoid":"lightning_1",
+        "callback": function(){
+            $(".fullfilter").animate({
+                opacity: 0.95
+            },0);
+        }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
     //     "align": "centerXY",
