@@ -29,15 +29,13 @@ dp(document).ready(function() {
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1",
         "callback": function(){
-            $(".lightning-video").fadeIn(1500);
-            $(".fullfilter").animate({
-                opacity: 0.97
-            },2500);
-            console.log('Done');
-            
             setTimeout(function(){
-
-            }, 3000);
+                $(".lightning-video").fadeIn(1500);
+                $(".fullfilter").animate({
+                    opacity: 0.97
+                },2500);
+                console.log('Done');
+            }, 2000);
         }
     });
     // var videobackgroundFire = new dp.backgroundVideo(dp('.fire-video'), {
