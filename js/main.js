@@ -73,7 +73,7 @@ dp(document).ready(function() {
         },0);
         $(".fullfilter-hover").animate({
             opacity: 0.92
-        },0);
+        },500);
         $(".fullfilter").animate({
             opacity: 0
         },1500);
