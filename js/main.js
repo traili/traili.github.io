@@ -92,18 +92,18 @@ dp(document).ready(function() {
     stayTuned.click(function(e){
         $(".fullfilter-hover").animate({
             opacity: 0
-        },1500);
+        },700);
         // $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
 
         $(".fullfilter-clicked").animate({
             opacity: 1
-        },100);
+        },500);
         $(".fullfilter-clicked-2").animate({
             opacity: 1
         },100);
         $(".fullfilter-clicked-3").animate({
             opacity: 1
-        },500);
+        },100);
         $(".fullfilter-clicked-4").animate({
             opacity: 1
         },100);
