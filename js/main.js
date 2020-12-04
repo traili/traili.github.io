@@ -90,7 +90,9 @@ dp(document).ready(function() {
         // hoverDone = false;
     });
     stayTuned.click(function(e){
-        $(".fullfilter-hover").fadeOut();
+        $(".fullfilter-hover").animate({
+            opacity: 0
+        },1500);
         // $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
 
         $(".fullfilter-clicked").animate({
@@ -101,13 +103,13 @@ dp(document).ready(function() {
         },100);
         $(".fullfilter-clicked-3").animate({
             opacity: 1
-        },100);
+        },500);
         $(".fullfilter-clicked-4").animate({
             opacity: 1
         },100);
         $(".fullfilter").animate({
             opacity: 0
-        },1500);
+        },500);
 
         // setTimeout(function(){
         //     window.location = 'https://gitlab.com/traili/traili';
