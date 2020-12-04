@@ -95,19 +95,19 @@ dp(document).ready(function() {
 
         $(".fullfilter-clicked").animate({
             opacity: 1
-        },1500);
+        },100);
         $(".fullfilter-clicked-2").animate({
             opacity: 1
-        },1500);
+        },100);
         $(".fullfilter-clicked-3").animate({
             opacity: 1
-        },1500);
+        },100);
         $(".fullfilter-clicked-4").animate({
             opacity: 1
-        },1500);
+        },100);
         $(".fullfilter").animate({
             opacity: 0
-        },2500);
+        },1500);
 
         // setTimeout(function(){
         //     window.location = 'https://gitlab.com/traili/traili';
