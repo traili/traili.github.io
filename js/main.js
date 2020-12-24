@@ -83,7 +83,7 @@ dp(document).ready(function() {
         },0);
         $(".lightning-video").animate({
             opacity: 0.7
-        },0);
+        },5000);
         $(".fullfilter-hover").animate({
             opacity: 0
         },1500);
