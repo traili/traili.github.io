@@ -93,6 +93,8 @@ dp(document).ready(function() {
         $(".fullfilter-hover").animate({
             opacity: 0
         },700);
+
+        $(".fullfilter-hover").css("background", "linear-gradient(0deg, #ff006a, hsl(66deg 100% 50% / 98%), #a900ff)");
         // $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
 
         $(".fullfilter-clicked").animate({
