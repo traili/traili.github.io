@@ -87,6 +87,11 @@ dp(document).ready(function() {
         $(".fullfilter-hover").animate({
             opacity: 0
         },1500);
+
+        $(".fullfilter-clicked-rightblock").animate({
+            opacity: 0
+        },500);
+
         // hoverDone = false;
     });
     stayTuned.click(function(e){
@@ -96,6 +101,14 @@ dp(document).ready(function() {
 
         $(".fullfilter-hover").css("background", "linear-gradient(0deg, #ff006a, hsl(66deg 100% 50% / 98%), #a900ff)");
         // $(".fullfilter").css("background","linear-gradient(0deg,#bd1ebf, hsla(186, 100%, 50%, 0.98),#213994)");
+
+        $(".fullfilter-clicked-rightblock").animate({
+            opacity: 1
+        },500);
+
+        $(".lightning-video").animate({
+            opacity: 0.9
+        },5000);
 
         $(".fullfilter-clicked").animate({
             opacity: 1
@@ -118,6 +131,7 @@ dp(document).ready(function() {
         //     // e.trigger();
         // },2000);
     });
+
     $(".fullfilter").click(function(){
         // $(".fullfilter").css("background","linear-gradient(0deg, #10364c, hsla(186, 100%, 50%, 0.98), #114b6d)");
         // $(".fullfilter-hover").css("background","linear-gradient(0deg,#1c5c82, hsla(186, 100%, 50%, 0.98),#1f80b9)");
