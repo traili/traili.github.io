@@ -95,6 +95,19 @@ dp(document).ready(function() {
         // hoverDone = false;
     });
     stayTuned.click(function(e){
+
+        $(".lightning-video").fadeIn(500);
+
+        setTimeout(function () {
+            $(".lightning-video").animate({
+                opacity: 0.97
+            },1000);
+        },1500);
+        //
+        // $(".lightning-video").animate({
+        //     opacity: 0.9
+        // },500);
+
         $(".fullfilter-hover").animate({
             opacity: 0
         },700);
@@ -106,9 +119,7 @@ dp(document).ready(function() {
             opacity: 1
         },500);
 
-        $(".lightning-video").animate({
-            opacity: 0.9
-        },1000);
+
 
         $(".fullfilter-clicked").animate({
             opacity: 1
