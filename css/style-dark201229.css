@@ -483,7 +483,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
     background: linear-gradient(90deg, rgb(255 0 224 / 0%) 0%, rgb(255 255 255 / 40%) 17%, rgb(193 1 178 / 0%) 27%);
 
-            /*linear-gradient(90deg,*/
+    /*background: linear-gradient(90deg,*/
             /*rgba(150, 3, 152, 0.99) 20%,*/
             /*rgba(224, 211, 245, 0.98),*/
             /*rgba(193, 1, 141, 0.99) 73%);*/

@@ -22,10 +22,10 @@ dp(document).ready(function() {
     var videobackgroundLightning1 = new dp.backgroundVideo(dp('.lightning-video'), {
         "align": "centerXY",
         "muted": "muted",
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "path": "video/",
-        "filename": "lightning_background",
+        "filename": "lightning_background_1080_1.5",
         "types": ["mp4", "ogg", "webm"],
         "videoid":"lightning_1",
         "callback": function(){
