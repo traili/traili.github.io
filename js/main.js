@@ -108,7 +108,7 @@ dp(document).ready(function() {
 
         $(".lightning-video").animate({
             opacity: 0.9
-        },5000);
+        },1000);
 
         $(".fullfilter-clicked").animate({
             opacity: 1
