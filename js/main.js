@@ -1,5 +1,5 @@
 var dp=jQuery;
-var hoverDone;
+var hoverDone, clicked, lightningVideoOpacity;
 console.log = function(){};
 dp(document).ready(function() {
     Grid.init();
@@ -68,8 +68,14 @@ dp(document).ready(function() {
         hoverDone = true;
         e.preventDefault();
 
+        if (clicked) {
+            lightningVideoOpacity = 0.9;
+        } else {
+            lightningVideoOpacity = 1;
+        }
+
         $(".lightning-video").animate({
-            opacity: 1
+            opacity: lightningVideoOpacity
         },0);
         $(".fullfilter-hover").animate({
             opacity: 0.92
@@ -95,7 +101,7 @@ dp(document).ready(function() {
         // hoverDone = false;
     });
     stayTuned.click(function(e){
-
+        clicked = true;
         $(".lightning-video").fadeIn(500);
 
         setTimeout(function () {
