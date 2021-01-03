@@ -163,11 +163,8 @@ dp(document).ready(function() {
 
         if (fluidFilter === "turnedOn") {
             fluidFilter = "turnedOff";
-            // $(".fullfilter-clicked-2").css("background","linear-gradient(90deg, rgba(245, 35, 132, 0.99) 32%, rgb(255, 212, 0), rgba(46, 34, 142, 0) 36%)");
-            // $(".fullfilter-clicked-2").css("background","linear-gradient(90deg, rgba(245, 35, 132, 0.99) 32%, rgb(255, 188, 0), rgba(46, 34, 142, 0) 36%)");
         } else {
             fluidFilter = "turnedOn";
-            // $(".fullfilter-clicked-2").css("background","linear-gradient(90deg, rgba(245, 35, 132, 0.99) 32%, rgb(255, 188, 0), rgba(46, 34, 142, 0) 36%)");
         }
 
         // $(".lightning-video").fadeIn(500);
