@@ -514,8 +514,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     z-index: 103;
     /*background: #000000;*/
 
-    /*background: linear-gradient(90deg,rgba(60, 52, 55, 0) 30%,rgba(255, 255, 0, 0.95), rgba(136, 222, 24, 0) 38%);*/
     background: linear-gradient(90deg,rgba(60, 52, 55, 0) 30%,rgba(255, 255, 0, 0.28), rgba(136, 222, 24, 0) 38%);
+    /*background: linear-gradient(90deg,rgba(60, 52, 55, 0) 30%,rgba(255, 255, 0, 0.95), rgba(136, 222, 24, 0) 38%);*/
     /*background: linear-gradient(90deg,rgba(60, 52, 55, 0) 32%,rgba(255, 153, 0, 0.95), rgba(136, 222, 24, 0) 36%);*/
     /*background: linear-gradient(90deg,rgba(60, 52, 55, 0) 30%,rgba(255, 255, 0, 0.95), rgba(136, 222, 24, 0.85) 38%);*/
     /*background: linear-gradient(90deg,rgba(60, 52, 55, 0) 30%,rgba(255, 255, 0, 0.95),rgba(222, 3, 185, 0.85) 38%);*/
