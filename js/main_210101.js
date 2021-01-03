@@ -65,15 +65,16 @@ dp(document).ready(function() {
         loop: {active: true}
     });
 
+    // src: '/video/tr.webm',
+
     player.source = {
         type: 'video',
         title: 'Traili fluid',
         sources: [
             {
-                // src: 'https://psyfundvideo.s3.eu-west-3.amazonaws.com/tr.webm',
-                src: '/video/tr.webm',
+                src: 'https://psyfundvideo.s3.eu-west-3.amazonaws.com/tr.webm',
                 type: 'video/webm',
-                size: 1080,
+                size: 1080
             }
         ]
     };
