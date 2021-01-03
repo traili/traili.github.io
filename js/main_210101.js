@@ -180,7 +180,8 @@ dp(document).ready(function() {
         },0);
 
         // $(".fullfilter-hover").css("background", "linear-gradient(0deg, #ff006a, hsl(66deg 100% 50% / 98%), #a900ff)");
-        $(".fullfilter-hover").css("background", "linear-gradient(0deg, rgb(255, 0, 106), rgb(134, 8, 136), rgb(169, 0, 255))");
+        // $(".fullfilter-hover").css("background", "linear-gradient(0deg, rgb(255, 0, 106), rgb(134, 8, 136), rgb(169, 0, 255))");
+        $(".fullfilter-hover").css("background", "rgba(112, 12, 130, 0.64)");
 
         $(".fullfilter-clicked-rightblock").animate({
             opacity: 1
