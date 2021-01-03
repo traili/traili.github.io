@@ -29,9 +29,11 @@
         <!-- ANIMATED CSS -->
         <link href="css/lib/animate.css" rel="stylesheet">
         <!-- STYLE CSS -->
-        <link href="css/style-dark201230.css" rel="stylesheet">
+        <link href="css/plyr_3.5.7.css" rel="stylesheet">
+        <link href="css/style-dark210101.css" rel="stylesheet">
         <!-- MODERNIZER JS -->
         <script src="js/lib/modernizr.custom.js"></script>
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
@@ -62,7 +64,7 @@
 
                 <div class="main_top_loading text-center">
                     <div class="header-center">
-                        <img class="" src="images/loading.gif" style="width:100px; height: 100px;">
+                        <img id="preloader_gif" class="" src="images/loading.gif" style="width:100px; height: 100px;">
                     </div>
                 </div>
                 <!---->
@@ -73,18 +75,22 @@
                 <div class="fullfilter-clicked-2"></div>
                 <div class="fullfilter-clicked-rightblock"></div>
                 <div class="fullfilter-clicked-3"></div>
-                <div class="fullfilter-clicked-4"></div>
+                <!--<div class="fullfilter-clicked-4"></div>-->
+                <div id="fluid_container">
+                    <video src="/video/tr.webm" id="tr_plyr" loop></video>
+                </div>
             </div>
         </div>
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/lib/grid.js"></script>
+        <script src="js/plyr_3.5.7.js"></script>
         <script src="js/lib/jquery.backgroundvideo6.js"></script>
         <script src="js/lib/waypoints.js"></script>
         <!--<script src="js/lib/jquery.backtotop.js"></script>-->
         <script src="js/lib/jquery.parallax.js"></script>
         <!--<script src="js/lib/jquery.smooth-scroll.min.js"></script>-->
         <script src="js/lib/jquery.fitvid.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main_210101.js"></script>
     </body>
 </html>
