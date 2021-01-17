@@ -5,19 +5,19 @@ dp(document).ready(function() {
     Grid.init();
     dp('.bg-about').parallax("10%", 1);
     // dp("#backtotop").backToTop();
-    var videobackground = new dp.backgroundVideo(dp('.waves-video'), {
-        "align": "centerXY",
-        "muted": "muted",
-        "width": 1280,
-        "height": 720,
-        "path": "video/",
-        "filename": "cn_s1",
-        "types": ["mp4", "ogg", "webm"],
-        "videoid":"sea",
-        "callback": function(){
-            console.log('Done');
-        }
-    });
+    // var videobackground = new dp.backgroundVideo(dp('.waves-video'), {
+    //     "align": "centerXY",
+    //     "muted": "muted",
+    //     "width": 1280,
+    //     "height": 720,
+    //     "path": "video/",
+    //     "filename": "cn_s1",
+    //     "types": ["mp4", "ogg", "webm"],
+    //     "videoid":"sea",
+    //     "callback": function(){
+    //         console.log('Done');
+    //     }
+    // });
 
     var videobackgroundLightning1 = new dp.backgroundVideo(dp('.lightning-video'), {
         "align": "centerXY",
@@ -72,8 +72,8 @@ dp(document).ready(function() {
         title: 'Traili fluid',
         sources: [
             {
-                // src: 'https://psyfundvideo.s3.eu-west-3.amazonaws.com/tr.webm',
-                src: '/video/tr.webm',
+                src: 'https://psyfundvideo.s3.eu-west-3.amazonaws.com/tr.webm',
+                // src: '/video/tr.webm',
                 type: 'video/webm',
                 size: 1080
             }
@@ -170,7 +170,7 @@ dp(document).ready(function() {
 
         // $(".lightning-video").fadeIn(500);
 
-        $(".lightning-video").fadeOut(300);
+        $(".lightning-video").hide(100);
 
         // $(".lightning-video").animate({
         //     display: "none"
