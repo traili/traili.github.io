@@ -37,9 +37,9 @@ dp(document).ready(function() {
                             opacity: 0.97
                         },2500);
                     }
-                },1000);
+                },100);
                 console.log('Done');
-            }, 2000);
+            }, 0);
             $("#preloader_gif").fadeOut();
         }
     });
