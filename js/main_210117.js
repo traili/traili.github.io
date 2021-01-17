@@ -142,7 +142,7 @@ dp(document).ready(function() {
                 console.log('Set fullfilter 97')
             });
             $(".lightning-video").animate({
-                opacity: 0.7
+                opacity: 1
             },5000);
         } else {
 
@@ -211,7 +211,7 @@ dp(document).ready(function() {
             //     opacity: 0
             // },700);
 
-            $("#fluid_container").fadeIn(500);
+            $("#fluid_container").fadeIn(1000);
             player.play();
         },0);
 
