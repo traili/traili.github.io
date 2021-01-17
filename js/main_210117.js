@@ -267,7 +267,7 @@ function pulseAnimation() {
                         opacity: 0.97
                     },0);
                     $(".lightning-video").animate({
-                        opacity: 0.7
+                        opacity: 1
                     },0);
                     $(".fullfilter-hover").animate({
                         opacity: 0
