@@ -7,6 +7,7 @@
 }
 body {
     font-weight: 300;
+    background: linear-gradient(0deg, #3b0575, hsl(324deg 100% 50% / 98%), #fff700);
 }
 .navbar.navbar-default{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border:0;background:#25292c;}
 .navbar .navbar-brand{font-family:'Raleway', sans-serif;padding:18px 25px;padding-right:30px;color:#FCFCFC;font-weight:900;text-transform:uppercase;height:auto;background:#4cddf3;outline:0;}

@@ -170,7 +170,7 @@ dp(document).ready(function() {
 
         // $(".lightning-video").fadeIn(500);
 
-        $(".lightning-video").hide(100);
+        $(".lightning-video").hide();
 
         // $(".lightning-video").animate({
         //     display: "none"
@@ -211,7 +211,7 @@ dp(document).ready(function() {
             //     opacity: 0
             // },700);
 
-            $("#fluid_container").fadeIn(1500);
+            $("#fluid_container").fadeIn(500);
             player.play();
         },0);
 
